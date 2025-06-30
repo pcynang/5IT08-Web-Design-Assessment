@@ -1,0 +1,335 @@
+/* Dark Theme Overrides */
+:root {
+    --body-bg: #121212;
+    --card-bg: #1e1e1e;
+    --text-color: #ffffff;
+    --text-secondary: #e0e0e0;
+    --border-color: #444;
+    --light-color: #2d2d2d;
+    --dark-color: #f5f5f5;
+}
+
+body {
+    background-color: var(--body-bg);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Improve text contrast */
+body, p, h1, h2, h3, h4, h5, h6, .card-title, .form-label, .nav-link, .dropdown-item, .text-muted {
+    color: var(--text-color) !important;
+}
+
+/* Secondary text */
+.text-muted {
+    color: var(--text-secondary) !important;
+    opacity: 0.9;
+}
+
+/* Links */
+a {
+    color: #4dabf7;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: #74c0fc;
+    text-decoration: underline;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #212529 !important;
+    border-bottom: 1px solid #333;
+}
+
+/* Cards */
+.card {
+    background-color: var(--card-bg);
+    border-color: var(--border-color);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.card-header {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-bottom-color: var(--border-color);
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+.card-body {
+    color: var(--text-color);
+}
+
+/* Tables */
+.table {
+    color: var(--text-color) !important;
+}
+
+.table th {
+    color: var(--text-color) !important;
+    border-bottom-color: var(--border-color) !important;
+}
+
+.table td {
+    border-color: var(--border-color) !important;
+}
+
+/* Forms */
+.form-control, .form-select {
+    background-color: #2d2d2d;
+    border-color: #444;
+    color: var(--text-color);
+}
+
+.form-control:focus, .form-select:focus {
+    background-color: #333;
+    border-color: #4dabf7;
+    color: var(--text-color);
+    box-shadow: 0 0 0 0.25rem rgba(77, 171, 247, 0.25);
+}
+
+.form-control:disabled, .form-control[readonly] {
+    background-color: #333;
+    color: #aaa;
+}
+
+/* Dropdowns */
+.dropdown-menu {
+    background-color: #2d2d2d;
+    border: 1px solid var(--border-color);
+}
+
+.dropdown-item {
+    color: var(--text-color);
+}
+
+.dropdown-item:hover, .dropdown-item:focus {
+    background-color: #3a3a3a;
+    color: var(--text-color);
+}
+
+.dropdown-divider {
+    border-color: var(--border-color);
+}
+
+/* Navbar */
+.navbar {
+    background-color: #1a1a1a !important;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.nav-link {
+    color: var(--text-color) !important;
+}
+
+.nav-link:hover, .nav-link:focus {
+    color: #4dabf7 !important;
+}
+
+/* Buttons */
+.btn-outline-primary {
+    color: #4dabf7;
+    border-color: #4dabf7;
+}
+
+.btn-outline-primary:hover {
+    background-color: #4dabf7;
+    color: #fff;
+}
+
+/* Alerts */
+.alert {
+    border: none;
+    color: var(--text-color);
+}
+
+.alert-primary {
+    background-color: rgba(77, 171, 247, 0.2);
+    border-left: 4px solid #4dabf7;
+}
+
+.alert-success {
+    background-color: rgba(40, 167, 69, 0.2);
+    border-left: 4px solid #28a745;
+}
+
+.alert-danger {
+    background-color: rgba(220, 53, 69, 0.2);
+    border-left: 4px solid #dc3545;
+}
+
+/* Badges */
+.badge {
+    color: #fff;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1e1e1e;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #444;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Forms */
+.form-control, .form-select {
+    background-color: #333;
+    border-color: #555;
+    color: #fff;
+}
+
+.form-control:focus, .form-select:focus {
+    background-color: #333;
+    color: #fff;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+.form-control:disabled, .form-control[readonly] {
+    background-color: #444;
+    opacity: 1;
+}
+
+/* Tables */
+.table {
+    color: var(--text-color);
+}
+
+.table th {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-color: var(--border-color);
+}
+
+.table td {
+    border-color: var(--border-color);
+}
+
+/* Dropdowns */
+.dropdown-menu {
+    background-color: #2d2d2d;
+    border-color: #444;
+}
+
+.dropdown-item {
+    color: #f8f9fa;
+}
+
+.dropdown-item:hover, .dropdown-item:focus {
+    background-color: #3d3d3d;
+    color: #fff;
+}
+
+.dropdown-divider {
+    border-color: #444;
+}
+
+/* Modal */
+.modal-content {
+    background-color: #2d2d2d;
+    border-color: #444;
+}
+
+.modal-header, .modal-footer {
+    border-color: #444;
+}
+
+/* Custom scrollbar for dark theme */
+::-webkit-scrollbar-track {
+    background: #2d2d2d;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #555;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #666;
+}
+
+/* Form validation */
+.was-validated .form-control:valid, .form-control.is-valid,
+.was-validated .form-select:valid, .form-select.is-valid {
+    border-color: #198754;
+    background-color: rgba(25, 135, 84, 0.1);
+}
+
+.was-validated .form-control:invalid, .form-control.is-invalid,
+.was-validated .form-select:invalid, .form-select.is-invalid {
+    border-color: #dc3545;
+    background-color: rgba(220, 53, 69, 0.1);
+}
+
+/* Custom form controls */
+.form-check-input:checked {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.form-check-input:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+/* Text colors for better contrast */
+.text-muted {
+    color: #adb5bd !important;
+}
+
+/* Disabled buttons */
+.btn:disabled, .btn.disabled {
+    opacity: 0.5;
+}
+
+/* Custom form switches */
+.form-switch .form-check-input:checked {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+/* Custom select dropdown */
+.form-select {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e") !important;
+}
+
+/* Tooltips */
+.tooltip {
+    --bs-tooltip-bg: #333;
+    --bs-tooltip-color: #fff;
+}
+
+/* Popovers */
+.popover {
+    background-color: #2d2d2d;
+    border-color: #444;
+}
+
+.popover-header {
+    background-color: #333;
+    border-bottom-color: #444;
+    color: #fff;
+}
+
+.popover-body {
+    color: #f8f9fa;
+}
+
+/* Custom form validation icons */
+.was-validated .form-control:valid, .form-control.is-valid {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23198754' d='M2.3 6.73.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e");
+}
+
+.was-validated .form-control:invalid, .form-control.is-invalid {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%23dc3545'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23dc3545' stroke='none'/%3e%3c/svg%3e");
+}

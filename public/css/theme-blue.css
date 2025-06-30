@@ -1,0 +1,258 @@
+/* Blue Theme Overrides */
+:root {
+    --primary-color: #0d6efd;
+    --secondary-color: #6c757d;
+    --success-color: #198754;
+    --danger-color: #dc3545;
+    --warning-color: #ffc107;
+    --info-color: #0dcaf0;
+    --light-color: #f8f9fa;
+    --dark-color: #212529;
+    --body-bg: #e9f0f9;
+    --card-bg: #ffffff;
+    --text-color: #2c3e50;
+    --border-color: #d1e0f0;
+}
+
+body {
+    background-color: var(--body-bg);
+    color: var(--text-color);
+}
+
+/* Navbar */
+.navbar {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%) !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand, .nav-link {
+    color: white !important;
+}
+
+.nav-link:hover, .nav-link:focus {
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+
+/* Cards */
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    background: linear-gradient(135deg, #f5f9ff 0%, #e6f0ff 100%);
+    border-bottom: 1px solid var(--border-color);
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+/* Buttons */
+.btn {
+    border-radius: 0.375rem;
+    font-weight: 400;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    transition: all 0.2s ease-in-out;
+    border: 1px solid transparent;
+}
+
+.btn-primary {
+    background-color: #0a58ca;
+    border-color: #0a58ca;
+    color: white;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+    background-color: #0a4fb5;
+    border-color: #0947a0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.btn-outline-primary {
+    color: #0a58ca;
+    border-color: #0a58ca;
+    background-color: transparent;
+    background-image: none;
+}
+
+.btn-outline-primary:hover, .btn-outline-primary:focus {
+    background-color: #0a58ca;
+    border-color: #0a58ca;
+    color: #fff;
+    box-shadow: 0 2px 5px rgba(10, 88, 202, 0.2);
+}
+
+/* Ensure consistent button sizes */
+.btn-sm {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+    line-height: 1.5;
+}
+
+.btn-lg {
+    padding: 0.5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+}
+
+/* Button focus states */
+.btn:focus, .btn:active:focus, .btn.active:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.25rem rgba(10, 88, 202, 0.25);
+}
+
+/* Disabled buttons */
+.btn:disabled, .btn.disabled {
+    opacity: 0.65;
+    pointer-events: none;
+}
+
+/* Forms */
+.form-control, .form-select {
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 0.6rem 1rem;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.25rem rgba(30, 60, 114, 0.15);
+}
+
+/* Alerts */
+.alert {
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.alert-primary {
+    background-color: rgba(13, 110, 253, 0.1);
+    color: var(--primary-color);
+}
+
+/* Badges */
+.badge {
+    font-weight: 500;
+    padding: 0.4em 0.8em;
+    border-radius: 50px;
+}
+
+/* Custom scrollbar for blue theme */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f7ff;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #a0b9e0;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #7fa3d9;
+}
+
+/* Custom form switches */
+.form-switch .form-check-input:checked {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+/* Custom checkboxes and radios */
+.form-check-input:checked {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+/* Dropdown menus */
+.dropdown-menu {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem 0;
+}
+
+.dropdown-item {
+    padding: 0.5rem 1.5rem;
+    color: var(--text-color);
+    transition: all 0.2s ease;
+}
+
+.dropdown-item:hover, .dropdown-item:focus {
+    background-color: rgba(30, 60, 114, 0.05);
+    color: var(--primary-color);
+}
+
+/* Custom table styling */
+.table {
+    --bs-table-bg: transparent;
+    --bs-table-striped-bg: rgba(30, 60, 114, 0.02);
+    --bs-table-hover-bg: rgba(30, 60, 114, 0.05);
+}
+
+.table th {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 0.5px;
+    color: #5d7fb9;
+    border-bottom: 2px solid var(--border-color);
+}
+
+/* Custom pagination */
+.page-link {
+    color: var(--primary-color);
+    border: 1px solid var(--border-color);
+    margin: 0 3px;
+    border-radius: 6px !important;
+    transition: all 0.2s ease;
+}
+
+.page-link:hover {
+    background-color: rgba(30, 60, 114, 0.1);
+    color: var(--primary-color);
+}
+
+.page-item.active .page-link {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    border-color: var(--primary-color);
+}
+
+/* Custom tabs */
+.nav-tabs {
+    border-bottom: 1px solid var(--border-color);
+}
+
+.nav-tabs .nav-link {
+    color: var(--secondary-color);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-weight: 500;
+    border-radius: 0;
+    transition: all 0.2s ease;
+}
+
+.nav-tabs .nav-link.active {
+    color: var(--primary-color);
+    background: transparent;
+    border-bottom: 3px solid var(--primary-color);
+}
+
+.nav-tabs .nav-link:hover {
+    border-color: transparent;
+    color: var(--primary-color);
+}

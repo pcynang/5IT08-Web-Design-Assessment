@@ -1,0 +1,23 @@
+{
+  "name": "assignment",
+  "version": "1.0.0",
+  "description": "You are required to create a web application to facilitate the following: A login page that prompt for username and password that are stored in a database A dynamic CSS which can be customized for several color schemes For users that are not registered, a registration page which gatherers and validate the following information on both server and client side: 3.1 Unique username 3.2 Unique email in the valid format 3.3 Mandatory First name and Last name Once logged in, user must be able to enter his/her ID number and retrieve personal information from a json/xml file. User will have various menu items to access different pages and they will have the option to hide/show menu items as per their preference Assessment Criteria 2.1 Create a data model through the application of XML and JSON that meets the brief 2.2 Use JS to validate a form so that it meets the brief 2.3 Use JS to validate user input so that it meets the brief 2.4 Use JS to process user input at client side so that it meets the brief 2.5 Use JS to create a dynamic navigation menu that meets the brief",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "express": "^5.1.0",
+    "express-rate-limit": "^7.5.1",
+    "express-session": "^1.18.1",
+    "helmet": "^8.1.0",
+    "nodemailer": "^7.0.4",
+    "sqlite3": "^5.1.7",
+    "uuid": "^11.1.0",
+    "xml2js": "^0.6.2"
+  }
+}
